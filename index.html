@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TEMPERATURE-HUMIDITY MONITORING WEB SYSTEM</title>
+        <link rel="shortcut icon" href="./img/monitoring.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <script src="./scripts/mqttws31.min.js"></script>
+    </head>
+
+    <body style="margin: 0">
+        <div id="container">
+            <header id="tieude">
+                <a href="index2.html" class="logo">
+                    <img src="./svg/list.svg" alt="" class="svg-list" />
+                    <!-- <div class="dropdown-content">
+                    <a href="#">Live data</a>
+                </div> -->
+                    <b class="syno">SYNO<span style="font-size: 34px">PEX</span> </b>
+                </a>
+                <p id="myTime"></p>
+                <span class="NameProject">AHU MONITORING WEB SYSTEM</span>
+            </header>
+
+            <section id="wapper">
+                <iframe src="./svg2/demo.svg" frameborder="0" id="left-wapper"></iframe>
+            </section>
+
+            <section id="footer">
+                <span
+                    style="
+                        position: absolute;
+                        left: 196px;
+                        font-size: 17px;
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        top: 1px;
+                        font-family: Time new roman;
+                    "
+                    >PROCESSING:</span
+                >
+                <input class="process" type="text" disabled />
+
+                <span
+                    style="
+                        position: absolute;
+                        left: 570px;
+                        font-size: 17px;
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        top: 1px;
+                        font-family: Time new roman;
+                    "
+                    >CONNECT:</span
+                >
+                <input id="connect" class="black green" type="text" disabled />
+
+                <span
+                    style="
+                        position: absolute;
+                        left: 760px;
+                        font-size: 17px;
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        top: 1px;
+                        font-family: Time new roman;
+                    "
+                    >HMI:</span
+                >
+                <input id="hmi" class="black green" type="text" disabled />
+
+                <span
+                    style="
+                        position: absolute;
+                        left: 990px;
+                        font-size: 17px;
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        top: 1px;
+                        font-family: Time new roman;
+                    "
+                    >TIME UPDATE DATA:</span
+                >
+                <input id="timedata" type="text" disabled />
+            </section>
+        </div>
+
+        <script>
+            setInterval(() => {
+                timer();
+            }, 1000);
+
+            const timer = () => {
+                var date = new Date();
+                var month = date.getMonth() + 1;
+                var year = date.getFullYear();
+                var day = date.getDate();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+                if (h < 10) h = '0' + h;
+                if (m < 10) m = '0' + m;
+                if (s < 10) s = '0' + s;
+                if (day < 10) day = '0' + day;
+                if (month < 10) month = '0' + month;
+                document.getElementById('myTime').innerHTML =
+                    h + ':' + m + ':' + s + '      ' + day + '/' + month + '/' + year;
+                timedata.value = new Date();
+            };
+        </script>
+        <script src="./scripts/script.js" type="text/javascript"></script>
+    </body>
+</html>

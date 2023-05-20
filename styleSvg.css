@@ -1,0 +1,16 @@
+@keyframes fanRotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#chiller4_comp_1-1-6-5-3-5-5,
+#chiller4_comp_1,
+#chiller4_comp_1-1-6-5-3-5, #chiller4_comp_1-1-6-5-3-5-5-28-74 {
+    animation: fanRotate 1s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}

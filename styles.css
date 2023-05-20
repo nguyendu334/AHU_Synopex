@@ -166,5 +166,13 @@ a.logo span {
     font-family: "times new roman";
 }
 
+.wind {
+    display: flex;
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    transform: rotate(180deg);
+}
+
 
 

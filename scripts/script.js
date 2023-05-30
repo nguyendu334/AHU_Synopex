@@ -35,6 +35,7 @@ function onConnectionLost(responseObject) {
 // This is the function which handles received messages
 function myMessageArrived(message) {
     db = JSON.parse(message.payloadString);
+    console.log(db)
 }
 
 // setInterval(() => {

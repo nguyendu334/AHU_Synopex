@@ -3,32 +3,26 @@
     src: url(./font/digital-7\ \(mono\ italic\).ttf);
 }
 
-#container {
-    width: 1920px;
-    height: 1080px;
-}
+
 
 #tieude {
-    /* z-index: 9999; */
-    /* position: relative; */
-    font-size: 30px;
+    z-index: 9999;
+    position: relative;
     text-align: center;
-    width: 1920px;
-    left: 0px;
-    top: 0px;
-    height: 64.976px;
+    width: 3840px;
+    height: 110px;
     background: rgb(15, 1, 63);
 }
 
 #tieude span {
     /* line-height: 75px; */
     font-weight: bold;
-    font-size: 48px;
+    font-size: 70px;
 }
 
 .svg-list {
-    margin-bottom: 5px;
-    width: 34px;
+    margin-bottom: 30px;
+    width: 70px;
 }
 
 a.logo {
@@ -37,7 +31,7 @@ a.logo {
     font-size: 34px;
     color: rgb(33 26 224);
     text-transform: uppercase;
-    left: 60px;
+    left: 100px;
 }
 
 a,
@@ -72,37 +66,39 @@ a.logo span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Time new roman";
-    font-size: 34px;
+    font-size: 70px;
     left: 60px;
 }
 
 #myTime {
     position: absolute;
-    left: 1700px;
-    top: 20px;
+    left: 3400px;
+    top: 30px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 34px;
     font-family: "Time new roman";
 }
 
 /* wrapper */
 #wapper {
-    position: relative;
-    width: 1920px;
-    height: 993.345px;
+    position: absolute;
+    top: 60px;
+    width: 3840px;
+    height: 2073.9px;
 }
 
 #left-wapper {
-    position: absolute;
-    width: 1920px;
-    height: 993.898px;
+    width:3840px;
+    height: 2080px;
     background: rgb(248, 244, 244);
 }
 
 #footer {
-    height: 21.126px;
+    height: 50.126px;
+    top: 2028px;
     background: rgb(153, 247, 247);
     position: relative;
+    transform: translateY(-60%);
 }
 
 @keyframes loader {
@@ -110,19 +106,20 @@ a.logo span {
         width: 0;
     }
     100% {
-        width: 200px;
+        width: 400px;
     }
 }
 
 .process {
     position: absolute;
-    height: 17px;
-    border-radius: 5px;
-    top: 1.5px;
-    left: 314px;;
+    height: 34px;
+    border-radius: 10px;
+    top: 26.5px;
+    left: 430px;
     animation: loader 8s linear infinite;
     background: #dbeb05;
     border: none;
+    transform: translateY(-60%);
 }
 
 .black {
@@ -136,33 +133,35 @@ a.logo span {
 
 #hmi{
     position: absolute;
-    height: 17px;
-    width: 17px;
+    height: 34px;
+    width: 34px;
     border-radius: 100%;
-    top: 2px;
-    left: 802px;
+    top: 27px;
+    left: 1385px;
     border: none;
+    transform: translateY(-60%);
 }
 
 #connect{
     position: absolute;
-    height: 17px;
-    width: 17px;
+    height: 34px;
+    width: 34px;
     border-radius: 100%;
-    top: 2px;
-    left: 660px;
+    top: 27px;
+    left: 1050px;
     border: none;
+    transform: translateY(-60%);
 }
 
 #timedata{
     background: rgb(153, 247, 247);
     position: absolute;
-    height: 17px;
+    height: 34px;
     width: 500px;
-    top: 2px;
+    top: 7px;
     right: 255px;
     border: none;
-    font-size: 17px;
+    font-size: 34px;
     font-family: "times new roman";
 }
 

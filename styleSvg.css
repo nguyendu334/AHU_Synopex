@@ -1,3 +1,9 @@
+@font-face {
+    font-family: myDigitalFont;
+    src: url(./font/digital-7\ \(mono\ italic\).ttf);
+}
+
+
 @keyframes fanRotate {
     0% {
         transform: rotateZ(0deg);

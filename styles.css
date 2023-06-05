@@ -94,6 +94,7 @@ a.logo span {
 }
 
 #footer {
+    width:3840px;
     height: 50.126px;
     top: 2028px;
     background: rgb(153, 247, 247);
@@ -157,7 +158,7 @@ a.logo span {
     background: rgb(153, 247, 247);
     position: absolute;
     height: 34px;
-    width: 500px;
+    width: 900px;
     top: 7px;
     right: 255px;
     border: none;
